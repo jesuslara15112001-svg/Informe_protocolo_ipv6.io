@@ -1,0 +1,255 @@
+/* Configuración Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e2e8f0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    line-height: 1.6;
+    padding: 20px 0;
+}
+
+/* Diseño de Hoja Carta */
+.pagina {
+    background-color: #ffffff;
+    width: 215.9mm;
+    min-height: 279.4mm;
+    margin: 0 auto 25px auto;
+    padding: 22mm 24mm;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.14);
+    position: relative;
+}
+
+/* =========================================
+   ESTILOS DE LA PORTADA (NUEVA PALETA FORMAL)
+   Azul Marino Institucional (#102a43) + Bronce (#b45309)
+   ========================================= */
+.portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 235mm;
+}
+
+/* Encabezado Superior */
+.encabezado-flex {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 12px;
+}
+
+.logo-box {
+    width: 72px;
+    height: 85px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.logo-respaldo {
+    width: 100%;
+    height: 100%;
+    border: 1.5px dashed #102a43;
+    border-radius: 6px;
+    color: #102a43;
+    font-size: 9pt;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.membrete-texto {
+    flex-grow: 1;
+    text-align: center;
+    color: #102a43; /* Azul marino profundo */
+    font-size: 9.5pt;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+    padding-right: 35px;
+}
+
+.linea-principal {
+    height: 1.8px;
+    background-color: #102a43;
+    width: 100%;
+}
+
+/* Bloque Central */
+.centro-portada {
+    text-align: center;
+    margin: auto 0;
+}
+
+.etiqueta-tipo {
+    color: #b45309; /* Bronce / Ámbar institucional */
+    font-size: 10.5pt;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.titulo-principal {
+    color: #0f172a;
+    font-size: 24pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.subtitulo-principal {
+    color: #243b53; /* Azul acero elegante */
+    font-size: 13pt;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Bloque Inferior */
+.pie-portada {
+    width: 100%;
+}
+
+.linea-secundaria {
+    height: 1.4px;
+    background-color: #b45309; /* Línea bronce */
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+.datos-inferiores {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 10.5pt;
+}
+
+.bloque-izquierdo {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloque-derecho {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.etiqueta-dato {
+    color: #64748b;
+    font-size: 8.5pt;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.nombre-dato {
+    color: #0f172a;
+    font-size: 11pt;
+    font-weight: 700;
+}
+
+.cedula-dato {
+    color: #475569;
+    font-size: 9.5pt;
+    margin-top: 1px;
+}
+
+/* =========================================
+   ESTILOS DEL CONTENIDO INTERNO
+   ========================================= */
+.titulo-seccion {
+    color: #102a43;
+    font-size: 13pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    border-bottom: 1.5px solid #cbd5e1;
+    padding-bottom: 4px;
+}
+
+.pagina > .titulo-seccion:first-child {
+    margin-top: 0;
+}
+
+p {
+    font-size: 11pt;
+    text-align: justify;
+    margin-bottom: 12px;
+    color: #334155;
+}
+
+ul.lista-formal {
+    margin: 8px 0 15px 22px;
+    font-size: 11pt;
+    text-align: justify;
+    color: #334155;
+}
+
+ul.lista-formal li {
+    margin-bottom: 7px;
+}
+
+code {
+    background-color: #f1f5f9;
+    color: #b45309;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 10pt;
+    font-weight: 600;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 10pt;
+}
+
+th, td {
+    border: 1px solid #cbd5e1;
+    padding: 8px 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #102a43;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Configuración para Impresión / PDF */
+@media print {
+    body {
+        background: none;
+        padding: 0;
+    }
+    .pagina {
+        margin: 0;
+        box-shadow: none;
+        page-break-after: always;
+    }
+}
